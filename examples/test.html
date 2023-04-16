@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example HTML Form</title>
+    <script>
+        function validateForm() {
+            var name = document.forms["myForm"]["name"].value;
+            var email = document.forms["myForm"]["email"].value;
+            var password = document.forms["myForm"]["password"].value;
+            var comments = document.forms["myForm"]["comments"].value;
+
+            if (name == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            if (comments == "") {
+                alert("Comments must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+
+    <p>This is a paragraph.</p>
+
+
+    <a href="https://www.example.com">Link</a>
+
+
+    ![Image](image.jpg)
+
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+            <tr>
+                <td>Cell 3</td>
+                <td>Cell 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form name="myForm" action="submit.php" method="post" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
