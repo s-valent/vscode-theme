@@ -1,21 +1,26 @@
 {
-  "name": "custom-theme",
-  "displayName": "Custom",
-  "description": "",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.77.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Tomorrow Evening",
-        "uiTheme": "vs-dark",
-        "path": "./themes/tomorrow_evening.json"
-      }
-    ]
-  }
+	"name": "custom-theme",
+	"displayName": "Custom",
+	"description": "",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Tomorrow Gray",
+				"uiTheme": "vs-dark",
+				"path": "./themes/gray.json"
+			},
+			{
+				"label": "Tomorrow Sea",
+				"uiTheme": "vs-dark",
+				"path": "./themes/sea.json"
+			}
+		]
+	}
 }
