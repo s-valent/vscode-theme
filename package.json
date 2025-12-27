@@ -20,6 +20,11 @@
 				"label": "Tomorrow Sea",
 				"uiTheme": "vs-dark",
 				"path": "./themes/sea.json"
+			},
+			{
+				"label": "Vitesse Bold",
+				"uiTheme": "vs-dark",
+				"path": "./themes/old.json"
 			}
 		]
 	}
